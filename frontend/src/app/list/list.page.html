@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home" name="arrow-back"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Listado</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+  <img src="assets/img/gafas_modelo.jpg">
+  <ion-button (click) = "insertGafas()" expand="block">Añadir Gafas</ion-button>
+  <ion-card *ngFor="let g of gafas">
+    <ion-card-header>
+      <ion-card-title>Gafas Ikeveo</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      marca: {{g.brand}}<br /> 
+      modelo: {{g.model}}
+    </ion-card-content>
+    <ion-item>
+      <ion-icon (click)="updateGafas(g.id)" name="git-compare" slot="end" color="secondary"></ion-icon>
+      <ion-icon (click)="deleteGafas(g.id)" name="trash" slot="end" color="danger"></ion-icon>
+    </ion-item>
+  </ion-card>
+<!-- <ion-button (click) = "insertGafas()" expand="block">Añadir Gafas</ion-button> -->
+
+</ion-content>

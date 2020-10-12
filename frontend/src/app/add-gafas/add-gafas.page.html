@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/list" name="arrow-back"></ion-back-button>
+      </ion-buttons>
+      <ion-title>Añadir Gafas</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="gafasForm" (ngSubmit)="onFormSubmit()">
+    <ion-item>
+      <ion-label position="floating">Modelo</ion-label>
+      <ion-input formControlName="model" type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Marca</ion-label>
+      <ion-input formControlName="brand" type="text" required>
+      </ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="success" shape="full" expand="block">Añadir Gafas</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>
