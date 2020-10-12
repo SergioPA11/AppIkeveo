@@ -12,8 +12,8 @@ You need a working environment with:
 
 ## VERSION Proyect Spring-Ionic
 
-* [Frontend](https://github.com/SergioPA11/Ikeveo/tree/main/src)
-* [Backend](https://github.com/SergioPA11/Ikeveo/tree/main/backend)
+* [Frontend](https://github.com/SergioPA11/AppIkeveo/tree/master/frontend)
+* [Backend](https://github.com/SergioPA11/AppIkeveo/tree/master/backend)
 * [Postman](https://documenter.getpostman.com/view/12915849/TVRkZ7fM)
 
 ## NEW CONTENT
